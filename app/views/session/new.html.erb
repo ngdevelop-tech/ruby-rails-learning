@@ -10,6 +10,10 @@
         <%= f.label :password %>
         <%= f.text_field :password, class: "form-control", placeholder: "your secret password" %>
     </div>
+    <div class="mb-3">
+        <%= link_to "Forgot Password ?", password_reset_path %>
+    </div>
+
     <div>
         <%= f.submit "Sign In", disable_with: 'Submiting...', class:'btn btn-primary'%>
     </div>

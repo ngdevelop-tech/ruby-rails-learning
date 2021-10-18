@@ -56,3 +56,12 @@ Things you may want to cover:
 
 5. create a registration controller with `new` and `create` def
 6. create `reginstration/new.html.erb` html
+
+
+# Debugging Application
+
+```
+binding.irb
+```
+
+it is like a `debugger` in js

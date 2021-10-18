@@ -18,4 +18,10 @@ Rails.application.routes.draw do
   # update passwords
   get 'password', to: 'passwords#edit'
   patch 'password', to: 'passwords#update'
+
+  # reset password
+  get 'password/reset', to: 'password_reset#new'
+  post 'password/reset', to: 'password_reset#create'
+  get 'password/reset/edit', to: 'password_reset#edit'
+  patch 'password/reset/edit', to: 'password_reset#update'
 end

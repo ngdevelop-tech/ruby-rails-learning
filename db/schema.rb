@@ -17,6 +17,8 @@ ActiveRecord::Schema.define(version: 2021_10_14_114957) do
     t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "password_reset_token"
+    t.datetime "password_reset_token_created_at"
   end
 
 end
