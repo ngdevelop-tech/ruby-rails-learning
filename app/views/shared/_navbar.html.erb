@@ -21,7 +21,7 @@
 
         <div class="text-end d-flex align-items-center">
           <% if Current.user %>
-            <span class="me-2"> <%= Current.user.email %> </span>
+            <%= link_to Current.user.email, password_path , class: "btn btn-link" %>
             <%= button_to "Logout", logout_path, method: 'delete', class: 'btn btn-danger' %>
           <%else %>
             <%= link_to "Sign In", sign_in_path, class: "btn btn-outline-light me-2" %>
