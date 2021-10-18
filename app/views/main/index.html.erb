@@ -1,1 +1,7 @@
 <h1>Welcome to Rails Learning</h1>
+
+<% if @user%>
+    Logged In as <%= @user.email %>
+
+    <%= button_to "Log Out", logout_path, method: "delete", class: "btn btn-danger" %>
+<% end %>
